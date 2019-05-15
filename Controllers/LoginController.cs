@@ -41,9 +41,15 @@ namespace JWTAuthentication.Controllers
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));  
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);  
   
+             var claims = new[] {  
+                new Claim(JwtRegisteredClaimNames.Sub, userInfo.Username),  
+                new Claim(JwtRegisteredClaimNames.Email, userInfo.Email),  
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())  
+            };  
+
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],  
               _config["Jwt:Issuer"],  
-              null,  
+              claims,  
               expires: DateTime.Now.AddMinutes(120),  
               signingCredentials: credentials);  
   
