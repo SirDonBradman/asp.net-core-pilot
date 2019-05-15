@@ -1,0 +1,14 @@
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/bin/Debug/netcoreapp2.2/CoreEMS.deps.json
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/bin/Debug/netcoreapp2.2/CoreEMS.runtimeconfig.json
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/bin/Debug/netcoreapp2.2/CoreEMS.runtimeconfig.dev.json
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/bin/Debug/netcoreapp2.2/CoreEMS.dll
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/bin/Debug/netcoreapp2.2/CoreEMS.pdb
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.csprojAssemblyReference.cache
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.csproj.CoreCompileInputs.cache
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.RazorAssemblyInfo.cache
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.RazorAssemblyInfo.cs
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.AssemblyInfoInputs.cache
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.AssemblyInfo.cs
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.RazorTargetAssemblyInfo.cache
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.dll
+/Users/shivamm/Documents/GitWorkspace/EMS/CoreEMS/obj/Debug/netcoreapp2.2/CoreEMS.pdb
