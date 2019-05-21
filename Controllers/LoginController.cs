@@ -44,13 +44,14 @@ namespace JWTAuthentication.Controllers
              var claims = new[] {  
                 new Claim(JwtRegisteredClaimNames.Sub, userInfo.Username),  
                 new Claim(JwtRegisteredClaimNames.Email, userInfo.Email),  
+                new Claim("Role", userInfo.Role),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())  
             };  
 
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],  
               _config["Jwt:Issuer"],  
               claims,  
-              expires: DateTime.Now.AddMinutes(120),  
+              expires: DateTime.Now.AddMinutes(120),
               signingCredentials: credentials);  
   
             return new JwtSecurityTokenHandler().WriteToken(token);  
@@ -65,8 +66,13 @@ namespace JWTAuthentication.Controllers
             //Demo Purpose, I have Passed HardCoded User Information  
             if (login.Username == "shivam" && login.Password == "password")  
             {  
-                user = new UserModel { Username = "shivam mishra", Email = "test@gmail.com" };  
+                user = new UserModel { Username = "shivam mishra", Email = "test@gmail.com", Role = "Student" };  
             }  
+            else if (login.Username == "admin" && login.Password == "password")  
+            {  
+                user = new UserModel { Username = "admin", Email = "test@gmail.com", Role = "Admin" };  
+            }
+
             return user;  
         }  
     }  

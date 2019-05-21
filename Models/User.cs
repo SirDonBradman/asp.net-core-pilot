@@ -1,15 +1,14 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ContosoPets.Api.Models
+namespace CoreEMS.Models
 {
-    public class UserModel
+    public class AppUser
     {
         public string Username { get; set; }
-
-        public string Password { get; set; }
-
-        public string Email { get; set; }
-
         public string Role { get; set; }
+        public string Password { get; set; }
+        
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
     }
 }
