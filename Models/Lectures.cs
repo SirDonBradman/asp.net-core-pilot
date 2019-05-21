@@ -11,11 +11,15 @@ namespace CoreEMS.Models
         [Required]
         public Teacher Teacher { get; set; }
 
+        public string TeacherId { get; set; }
+
         [Required]
         public Subject Subject { get; set; }
+        public string SubjectId { get; set; }
 
         [Required]
         public Section Section { get; set; }
+        public string SectionId { get; set; }
 
         public int NumberOfClasses { get; set; }
     }

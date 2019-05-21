@@ -9,6 +9,7 @@ namespace CoreEMS.Models
 
         [Required]
         public Semester Semester { get; set; }
+        public string SemesterId { get; set; }
 
         [Required]
         public string Name { get; set; }

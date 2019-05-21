@@ -11,6 +11,7 @@ namespace CoreEMS.Models
         public string Name { get; set; }
 
         public Department Department { get; set; }
+        public string DepartmentId { get; set; }
         public List<Section> Sections { get; set; }
     }
 }

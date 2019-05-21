@@ -11,8 +11,10 @@ namespace CoreEMS.Models
         public string Name { get; set; }
 
         public Guardian Guardian { get; set; }
+        public string GuardianId { get; set; }
 
         public Section Section { get; set; }
+        public string SectionId { get; set; }
 
         public DateTime DateOfBirth { get; set; }
         
