@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Core.Data;
 using ContosoPets.Api.Models;
-using Core.Data.ProductNamespace;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;
 
@@ -13,7 +12,7 @@ namespace ContosoPets.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class ProductsController : ControllerBase
     {
         private readonly ILogger _logger;

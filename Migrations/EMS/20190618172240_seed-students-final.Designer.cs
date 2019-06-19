@@ -3,15 +3,17 @@ using System;
 using Core.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CoreEMS.Migrations.EMS
 {
     [DbContext(typeof(EMSContext))]
-    partial class EMSContextModelSnapshot : ModelSnapshot
+    [Migration("20190618172240_seed-students-final")]
+    partial class seedstudentsfinal
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -511,7 +513,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "1",
                             Address = "Bangalore",
                             BloodGroup = "A+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 859, DateTimeKind.Local).AddTicks(6430),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 610, DateTimeKind.Local).AddTicks(3100),
                             Gender = 0,
                             GuardianId = "1",
                             Name = "Shivam",
@@ -525,7 +527,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "2",
                             Address = "Bangalore",
                             BloodGroup = "B+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(2960),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8550),
                             Gender = 0,
                             GuardianId = "2",
                             Name = "Manish",
@@ -539,7 +541,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "3",
                             Address = "Bangalore",
                             BloodGroup = "AB+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(2990),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8590),
                             Gender = 0,
                             GuardianId = "3",
                             Name = "Ankur",
@@ -553,7 +555,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "4",
                             Address = "Bangalore",
                             BloodGroup = "O+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3000),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8590),
                             Gender = 1,
                             GuardianId = "4",
                             Name = "Priti",
@@ -567,7 +569,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "5",
                             Address = "Bangalore",
                             BloodGroup = "A+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3000),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8590),
                             Gender = 0,
                             GuardianId = "5",
                             Name = "Ishan",
@@ -581,7 +583,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "6",
                             Address = "Bangalore",
                             BloodGroup = "B+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3000),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8600),
                             Gender = 0,
                             GuardianId = "6",
                             Name = "Satyam",
@@ -595,7 +597,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "7",
                             Address = "Bangalore",
                             BloodGroup = "AB+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3010),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8600),
                             Gender = 1,
                             GuardianId = "7",
                             Name = "Madhu",
@@ -609,7 +611,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "8",
                             Address = "Bangalore",
                             BloodGroup = "A+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3010),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8610),
                             Gender = 1,
                             GuardianId = "8",
                             Name = "Chikku",
@@ -623,7 +625,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "9",
                             Address = "Bangalore",
                             BloodGroup = "AB+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3010),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8610),
                             Gender = 0,
                             GuardianId = "9",
                             Name = "Liyan",
@@ -637,7 +639,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "10",
                             Address = "Bangalore",
                             BloodGroup = "O+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3010),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8610),
                             Gender = 0,
                             GuardianId = "10",
                             Name = "Raju",
@@ -651,7 +653,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "11",
                             Address = "Bangalore",
                             BloodGroup = "A+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3010),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8620),
                             Gender = 0,
                             GuardianId = "1",
                             Name = "Rohan",
@@ -665,7 +667,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "12",
                             Address = "Bangalore",
                             BloodGroup = "AB+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3020),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8620),
                             Gender = 0,
                             GuardianId = "2",
                             Name = "Ramesh",
@@ -679,7 +681,7 @@ namespace CoreEMS.Migrations.EMS
                             Id = "13",
                             Address = "Bangalore",
                             BloodGroup = "B+",
-                            DateOfBirth = new DateTime(2019, 6, 19, 22, 18, 33, 864, DateTimeKind.Local).AddTicks(3020),
+                            DateOfBirth = new DateTime(2019, 6, 18, 22, 52, 39, 616, DateTimeKind.Local).AddTicks(8620),
                             Gender = 0,
                             GuardianId = "3",
                             Name = "Suresh",

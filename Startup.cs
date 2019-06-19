@@ -12,7 +12,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Core.Data;
 using Microsoft.EntityFrameworkCore;
-using Core.Data.ProductNamespace;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -74,6 +73,7 @@ namespace CoreEMS
             else
             {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseMiddleware(typeof(ErrorHandling));
                 app.UseHsts();
             }
             
@@ -85,6 +85,7 @@ namespace CoreEMS
         private void AddRepositoriesForDI(IServiceCollection services){
             services.AddScoped<EMSContext, EMSContext>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
         }
     }
 }

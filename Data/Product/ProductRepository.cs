@@ -1,8 +1,6 @@
-using System.Threading.Tasks;
 using ContosoPets.Api.Models;
-using Microsoft.EntityFrameworkCore;
 
-namespace Core.Data.ProductNamespace {
+namespace Core.Data {
     public class ProductRepository : GenericRepository<Product>, IProductRepository {
 
         private readonly EMSContext _entities;
