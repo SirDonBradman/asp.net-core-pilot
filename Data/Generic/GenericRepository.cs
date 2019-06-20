@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -13,14 +14,14 @@ namespace Core.Data {
             _entities = Context;
         }
 
-        public virtual IQueryable<T> GetAll() {
+        public virtual async Task<ICollection<T>> GetAll() {
             IQueryable<T> query = _entities.Set<T>();
-            return query;
+            return await Task.Run(() => query.ToList());
         }
 
-        public IQueryable<T> FindBy(System.Linq.Expressions.Expression<Func<T, bool>> predicate) {
+        public ICollection<T> FindBy(System.Linq.Expressions.Expression<Func<T, bool>> predicate) {
             IQueryable<T> query = _entities.Set<T>().Where(predicate);
-            return query;
+            return query.ToList();
         }
 
         public virtual void Add(T entity) {

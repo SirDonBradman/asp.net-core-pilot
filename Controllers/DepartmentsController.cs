@@ -21,8 +21,8 @@ namespace CoreEMS.Api.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Department>> GetAll() =>
-            _departmentRepository.GetAll().ToList();
+        public async Task<ActionResult<List<Department>>> GetAll() =>
+            (await _departmentRepository.GetAll()).ToList();
 
         // GET by ID action
         [HttpGet("{id}")]

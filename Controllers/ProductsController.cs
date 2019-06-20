@@ -12,7 +12,6 @@ namespace ContosoPets.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
     public class ProductsController : ControllerBase
     {
         private readonly ILogger _logger;
@@ -24,8 +23,8 @@ namespace ContosoPets.Api.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Product>> GetAll() =>
-            _productRepository.GetAll().ToList();
+        public async Task<ActionResult<List<Product>>> GetAll() =>
+            (await _productRepository.GetAll()).ToList();
 
         // GET by ID action
         [HttpGet("{id}")]
